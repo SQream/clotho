@@ -1,0 +1,19 @@
+# cargo-features = ["strip"]
+
+[package]
+name = "clotho"
+version = "1.0.0"
+authors = ["mo"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+aho-corasick = "0.7"
+
+[profile.release]
+lto = true
+codegen-units = 1  # Reduce compile time to get maximum size reduction optimization
+panic = 'abort'
+# opt-level = 'z'   # Optimize for size
+# strip = "symbols" # Not available in Stable Rust yet
