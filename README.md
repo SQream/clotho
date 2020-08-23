@@ -14,6 +14,23 @@ This tool is build against Rust 1.45.0+.
 
 This builds a standalone executable in the `target\release` folder.
 
+### Usage
+
+Use `-v` to specify replacements, `-f` to specify the file. Example:
+
+`clotho -v col1="'names'" -v col2=ages'' -v col3='"names2"' -v limit=14 -f check.txt`
+
+- Install Rust if needed (See below). This should provide you with the `cargo` build command. 
+
+- Clone this repo
+
+- `cd` to repo 
+
+- `cargo build --release --target x86_64-unknown-linux-musl`
+
+This builds a standalone executable in the `target\release` folder.
+
+
 ### Testing against an SQL file
 
 compile and run the file using `cargo run`, pass `--` to cargo to then pass command line arguments to the app.
