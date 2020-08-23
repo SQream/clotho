@@ -65,26 +65,3 @@ Download and run [rustup-init](https://static.rust-lang.org/rustup/dist/i686-pc-
 When a new stable version of Rust comes out, you can update any machine where Rust was already installed via:
 
 `rustup update`
-
-
-### Editor Support
-
-##### IntelliJ IDEA
-
-https://plugins.jetbrains.com/plugin/8182-rust
-
-##### VIM
-
-https://github.com/rust-lang/rust.vim
-
-##### Emacs
-
-https://github.com/rust-lang/rust-mode
-
-##### VS Code
-
-https://marketplace.visualstudio.com/items?itemName=rust-lang.rust
-
-##### Sublime Text
-
-https://github.com/rust-lang/rust-enhanced
